@@ -10,8 +10,18 @@ body {
   background-color: rgb(10, 77, 10);
 }
 
+.explanation {
+  width: 420px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  border: 5px solid rgb(119, 62, 14);
+}
+
 .memory-game {
-  width: 640px;
+  width: 840px;
   height: 640px;
   margin: auto;
   display: flex;
