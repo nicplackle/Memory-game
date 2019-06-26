@@ -12,7 +12,6 @@ const star = document.getElementById("star-rating").querySelectorAll(".star");
 let starCount = 3;
 // end stars test
 
-// moves test
 // Select the class moves-counter and change it's HTML
 const movesCount = document.querySelector(".moves-counter");
 // Create variable for moves counter, start the count at zero
@@ -71,13 +70,18 @@ function unflipCards() {
     resetBoard();
   }, 1500);
 
-  // moves counter test
+  // moves counter
   movesCounter();
-  // end moves counter test
 
   // stars test
   starRating();
   // end stars test
+}
+
+// moves counter
+function movesCounter() {
+  movesCount.innerHTML++;
+  moves++;
 }
 
 function resetBoard() {
@@ -91,33 +95,6 @@ function resetBoard() {
     card.style.order = randomPos;
   });
 })();
-/*
-// reset test
-function resetEverything() {
-  // Stop time, reset the minutes and seconds update the time inner HTML
-  stopTime();
-  timeStart = false;
-  seconds = 0;
-  minutes = 0;
-  timeCounter.innerHTML =
-    "<i class='fa fa-hourglass-start'></i>" + " Timer: 00:00";
-  // Reset star count and the add the class back to show stars again
-  star[1].firstElementChild.classList.add("fa-star");
-  star[2].firstElementChild.classList.add("fa-star");
-  starCount = 3;
-  // Reset moves count and reset its inner HTML
-  moves = 0;
-  movesCount.innerHTML = 0;
-  // Clear both arrays that hold the opened and matched cards
-  matched = [];
-  opened = [];
-  // Clear the deck
-  removeCard();
-  // Create a new deck
-  startGame();
-}
-// end reset test
-*/
 
 // stars test
 /*

@@ -15,9 +15,9 @@ body {
   border-radius: 0.5em;
   border: none;
   font-family: "Sigmar One", cursive;
+  color: rgb(10, 77, 10);
   background-color: #ffffff;
-  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
-  padding: 0.8em;
+  padding: 1em;
 }
 
 /* star rating */
@@ -42,7 +42,6 @@ ul > li {
   width: 420px;
   height: 640px;
   margin: auto;
-  /*display: flex;*/
   flex-wrap: wrap;
   perspective: 1000px;
   border: 5px solid rgb(119, 62, 14);
