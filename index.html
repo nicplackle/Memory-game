@@ -4,14 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Memory-game</title>
   </head>
   <body>
-      <section class="explanation"><h1>Memory Game</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt perspiciatis temporibus delectus doloribus magnam rem quasi ab at quidem est obcaecati dolores tenetur minima ratione suscipit tempore assumenda, alias a.</p>
-      </section>
-      <section class="memory-game">
+      <section class="explanation"><h1>MEMORY GAME</h1>
+      <p>Come and play the one and only Emoji Memory Game.  Press a card to see which emoji is on the back. Flip another card and try to find the matching emoji.<br><br>
+      Have fun!!!  
+      </p>
+      <br>
+      <br>
+      <h2>Scoreboard</h2>
+            <!-- stars-->
+            <ul id="star-rating" class="star-rating">
+                <li class="star"><i class="fa fa-star"></i></li>
+                <li class="star"><i class="fa fa-star"></i></li>
+                <li class="star"><i class="fa fa-star"></i></li>
+            </ul>
+            <span class="moves-counter">0</span> Moves 
+            <br>
+            <div class="reset" id="reset">
+                <button class="btn reset-btn">Reset <i class="fa fa-repeat"></i></button>
+            </div> 
+        </section>
+      
+      <section class="memory-game" id="memory-game">
           <div class="memory-card" data-framework="grandpa">
                 <img class="front-face" src="img/grandpa.png" alt="grandpa"></img>
                 <img class="back-face" src="img/eggplantfront.png" alt="emojicards"></img>
