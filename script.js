@@ -1,6 +1,7 @@
 const cards = document.querySelectorAll(".memory-card");
 
 let hasFlippedCard = false;
+// Variable to lock the board when player is flipping the cards
 let lockBoard = false;
 let firstCard;
 let secondCard;
@@ -19,14 +20,14 @@ let moves = 0;
 // Access the reset button
 const reset = document.querySelector(".reset-btn");
 
-// span tag for the timer
+// Span tag for the timer
 const timeCounter = document.querySelector(".timer");
 let time;
 let minutes = 0;
 let seconds = 0;
 let timeStart = false;
 
-// reset
+// Reset
 document.getElementById("reset").onclick = function() {
   window.location.reload();
 };
@@ -76,10 +77,6 @@ function unflipCards() {
 
   // moves counter
   movesCounter();
-
-  // stars test
-  // starRating();
-  // end stars test
 }
 
 // moves counter
@@ -99,25 +96,6 @@ function resetBoard() {
     card.style.order = randomPos;
   });
 })();
-
-// stars test
-/*
-Update the star rating.  Depending on the number of
-moves the user completes the game, the stars will decrease
-with the more moves the user takes.
-*/
-/*function starRating() {
-  if (moves === 8) {
-    // First element child is the <i> within the <li>
-    star[2].firstElementChild.classList.remove("fa-star");
-    starCount--;
-  }
-  if (moves === 12) {
-    star[1].firstElementChild.classList.remove("fa-star");
-    starCount--;
-  }
-}*/
-// stars test
 
 // timer test
 function timer() {
@@ -139,20 +117,7 @@ function timer() {
   }, 1000);
 }
 
-function stopTime() {
-  clearInterval(time);
-}
-
 // end timer test
 
-// resest everything test
-// end reset everything test
-/*function resetEverything() {
-  stopTime();
-  timeStart = false;
-  seconds = 0;
-  minutes = 0;
-  timeCounter.innerHTML = "<i class='fa fa-clock'></i>" + " Timer: 00:00";
-}*/
-
 cards.forEach(card => card.addEventListener("click", flipCard));
+cards.forEach(card => card.addEventListener("click", timer));
