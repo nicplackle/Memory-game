@@ -61,7 +61,7 @@ function checkForMatch() {
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
-
+  movesCounter();
   resetBoard();
 }
 
@@ -100,6 +100,10 @@ function resetBoard() {
 // timer test
 function timer() {
   // Update the count every 1 second
+  if (timeStart) {
+    return;
+  }
+  timeStart = true;
   time = setInterval(function() {
     seconds++;
     if (seconds === 60) {

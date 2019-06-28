@@ -21,23 +21,11 @@ body {
   margin: 2em;
 }
 
-/* star rating */
-ul > li {
-  list-style: none;
-}
-
-.star-rating > li {
-  display: inline-block;
-  padding: 0.8em;
-}
-/* end star rating */
-
 /* moves counter */
 .moves-counter {
   padding: 0.5em;
   display: inline-block;
 }
-/* end moves counter */
 
 .explanation {
   width: 420px;

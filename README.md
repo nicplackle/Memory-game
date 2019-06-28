@@ -18,3 +18,7 @@ There are 12 cards in this deck (6 pairs). When you click a card it flips around
 ## Play the game
 
 Play the game [here.](https://nicplackle.github.io/Memory-game/ "Emoji Memory Game")
+
+## Credits
+
+This game was made by me following different online tutorials. I changed the styling, added a move counter and a timer.
